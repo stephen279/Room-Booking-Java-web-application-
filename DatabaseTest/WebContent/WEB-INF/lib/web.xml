@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ebookshop</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>EBookShopQuery</servlet-name>
+    <servlet-class>com.it99plus.QueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EBookShopQueryMultiValue</servlet-name>
+    <servlet-class>com.it99plus.QueryMultiValueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EBookShopQueryMultiParam</servlet-name>
+    <servlet-class>com.it99plus.QueryMultiParamServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+    <servlet-name>EBookShopPostQuery</servlet-name>
+    <servlet-class>com.it99plus.QueryPostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EshopQuery</servlet-name>
+    <servlet-class>com.it99plus.EshopQueryServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+
+    <servlet-name>EshopBookOrderServlet</servlet-name>
+
+    <servlet-class>com.it99plus.EshopOrderServlet</servlet-class>
+
+  </servlet>
+
+  <servlet-mapping>
+
+    <servlet-name>EshopBookOrderServlet</servlet-name>
+
+    <url-pattern>/eshoporder</url-pattern>
+
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>EshopQuery</servlet-name>
+    <url-pattern>/eshopquery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EBookShopQuery</servlet-name>
+    <url-pattern>/query</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EBookShopQueryMultiParam</servlet-name>
+    <url-pattern>/querymp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EBookShopQueryMultiValue</servlet-name>
+    <url-pattern>/querymv</url-pattern>
+  </servlet-mapping>
+</web-app>

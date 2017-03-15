@@ -1,0 +1,88 @@
+body {
+	background-color: white;
+}
+
+div {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	top: 33%;
+	color: red;
+	background-color: lightgrey;
+}
+
+p {
+	position: absolute;
+	left: 30%;
+	font-size: 14px;
+	color: black;
+}
+
+ul {
+	position: absolute;
+	left: 45%;
+	top: -55%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+a {
+	display: inline-block;
+	width: 90px;
+	background-color: #dddddd;
+	color: Blue;
+	font: italic;
+}
+
+form {
+	position: absolute;
+	width: 80%;
+	top: 43%;
+	left: 43%;
+	color: blue;
+}
+
+h1 {
+	position: absolute;
+	color: red;
+	left: 43%;
+	top: 34%;
+}
+
+h2 {
+	position: absolute;
+	color: red;
+	left: 43%;
+	top: 14%;
+}
+
+form {
+	position: absolute;
+	display: inline-block;
+	color: green;
+	left: 30%;
+	top: 60%;
+}
+
+class {
+	position: absolute;
+	top: 29%;
+}
+
+.message {
+	position: absolute;
+	top: 55%;
+}
+
+span {
+	position: absolute;
+	top: 52%;
+	left: 46%;
+	color: red;
+}

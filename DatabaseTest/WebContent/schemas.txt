@@ -1,0 +1,60 @@
+CREATE SEQUENCE mID   // creates a incremental sequence used for primary key on prepareStatement.
+START WITH 0
+MINVALUE 0
+MAXVALUE 1000
+INCREMENT BY 1
+NOCACHE
+NOCYCLE
+
+CREATE TABLE zs_cos1    // create table for log_in
+(cos_ID INTEGER NOT NULL,
+email VARCHAR(100) NOT NULL,
+password VARCHAR(100) NOT NULL,
+PRIMARY KEY (cos_ID))
+
+
+ INSERT  INTO zs_cos1 (cos_id,EMAIL , PASSWORD) values (mid.nextval,?,?)  // using the sequence to auto_increment cos_id in my prepared statement
+ 
+ 
+ 
+ CREATE SEQUENCE RID  // creates a incremental sequence used for primary key on prepareStatement.
+START WITH 0
+MINVALUE 0
+MAXVALUE 10000
+INCREMENT BY 1
+NOCACHE
+NOCYCLE
+
+
+CREATE TABLE zs_roo1  		//create table for creating room
+(roo_ID INTEGER NOT NULL,
+userName VARCHAR(100) NOT NULL,
+costumerName VARCHAR(100) NOT NULL,
+location VARCHAR(100) NOT NULL,
+roomSize VARCHAR(100) NOT NULL,
+roomPrice VARCHAR(100) NOT NULL,
+contact VARCHAR(100) NOT NULL,
+PRIMARY KEY (roo_ID))
+
+ INSERT  INTO zs_roo1 (roo_id,userName , costumerName , location,roomSize,roomPrice,contact) values (Rid.nextval,?,?,?,?,?,?)// using the sequence to auto_increment roo_id in my prepared statement
+ 
+
+ CREATE SEQUENCE OID    // creates a incremental sequence used for primary key on prepareStatement.
+START WITH 0
+MINVALUE 0
+MAXVALUE 10000
+INCREMENT BY 1
+NOCACHE
+NOCYCLE
+ 
+ CREATE TABLE zs_ord1  			// create table for  booking cart 
+(ord_ID INTEGER NOT NULL,
+qty_ordered VARCHAR(100) NOT NULL,
+userName VARCHAR(100)NOT NULL ,
+password VARCHAR(100) ,
+location VARCHAR(100) ,
+roomSize VARCHAR(100) ,
+roomPrice VARCHAR(100) ,
+roomName VARCHAR(100),
+
+String sql = " INSERT  INTO zs_ord1 (ord_id,qty_ordered ,roomname,username, PASSWORD) values (oid.nextval,1,'"+ ids[i] +"',?,?) ";
